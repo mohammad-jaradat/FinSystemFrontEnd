@@ -11,11 +11,15 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
 
 import { UserService } from './services/user-service.service';
+//mport { NComponent } from './n/n.component';
+import { CurrencyComponent } from './currency/currency.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    UserFormComponent
+    UserFormComponent,
+   // NComponent,
+    CurrencyComponent
   ],
   imports: [
     BrowserModule,
