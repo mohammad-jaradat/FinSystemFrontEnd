@@ -11,15 +11,23 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
 
 import { UserService } from './services/user-service.service';
-//mport { NComponent } from './n/n.component';
-import { CurrencyComponent } from './currency/currency.component';
+ 
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
+
+import { authInterceptorProviders } from './helpers/auth.interceptor';
+ 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     UserFormComponent,
-   // NComponent,
-    CurrencyComponent
+
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent
+ 
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,7 @@ import { CurrencyComponent } from './currency/currency.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService,authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
