@@ -33,3 +33,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `ng serve --open`
 
 
+## comands for adding security
+`ng g s services/auth`
+`ng g s services/token-storage`
+`ng g s services/user`

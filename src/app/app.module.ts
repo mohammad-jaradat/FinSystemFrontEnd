@@ -11,11 +11,22 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
 
 import { UserService } from './services/user-service.service';
+
+import { authInterceptorProviders } from './helpers/auth.interceptor';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    UserFormComponent
+    UserFormComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +34,7 @@ import { UserService } from './services/user-service.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService,authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
