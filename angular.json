@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "FinSys"
+  "defaultProject": "FinSys",
+  "cli": {
+    "analytics": false
+  }
 }
